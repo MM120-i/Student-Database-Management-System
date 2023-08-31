@@ -13,7 +13,7 @@ struct student{
     char first_name[20];
     char last_name[20];
     int roll_no;
-    char Class[10];
+    char grade[10];
     char city[20];
     float per;
 };
@@ -105,8 +105,8 @@ void addStudent(){
         printf("\n\t\t\tEnter roll number  : ");
         scanf("%d", &info.roll_no);
 
-        printf("\n\t\t\tEnter class        : ");
-        scanf("%s", &info.Class);
+        printf("\n\t\t\tEnter grade        : ");
+        scanf("%s", &info.grade);
 
         printf("\n\t\t\tEnter address      : ");
         scanf("%s", &info.city);
@@ -154,7 +154,7 @@ void studentRecord(){
         
         printf("\n\t\t\t\tStudent name   : %s %s", info.first_name, info.last_name);
         printf("\n\t\t\t\tRoll no        : %d", info.roll_no);
-        printf("\n\t\t\t\tClass          : %s", info.Class);
+        printf("\n\t\t\t\tGrade          : %s", info.grade);
         printf("\n\t\t\t\tAdderess       : %s", info.city);
         printf("\n\t\t\t\tPercentage     : %0.2f", info.per);
         printf("\n\t\t\t\t_____________________________________________\n");
@@ -182,7 +182,7 @@ void searchStudent(){
             found = 1;
             printf("\n\t\t\t\tStudent name   : %s %s", info.first_name, info.last_name);
             printf("\n\t\t\t\tRoll no        : %d", info.roll_no);
-            printf("\n\t\t\t\tClass          : %s", info.Class);
+            printf("\n\t\t\t\tGrade          : %s", info.grade);
             printf("\n\t\t\t\tAdderess       : %s", info.city);
             printf("\n\t\t\t\tPercentage     : %0.2f", info.per);
             printf("\n\t\t\t\t_____________________________________________\n");
@@ -236,7 +236,7 @@ void delete() {
     fclose(fp1); // Close the temporary file
 
     if (found) {
-        
+
         remove("studentInfo");
         rename("temp.txt", "studentInfo");
         printf("\n\t\t\tRecord deleted successfully\n");
