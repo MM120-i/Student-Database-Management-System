@@ -26,5 +26,7 @@ This project was inspired by the tutorial provided by CodesGallery on YouTube (h
    - Delete Student Record
    - Exit
 3. Follow the on-screen prompts to perform the selected action.
+![image](https://github.com/MM120-i/Student-Database-Management-System/assets/80307451/45ab8dec-3d3a-4a02-9df7-afcb293f2f5d)
+
 
 Please note that this is a basic implementation and can be further enhanced with error handling, data validation, and additional features to suit specific requirements.
