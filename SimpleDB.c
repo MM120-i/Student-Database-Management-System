@@ -2,6 +2,7 @@
 #include <conio.h>
 #include <stdlib.h>
 #include <ctype.h>
+#include "SimpleDB.h"
 
 void addStudent();
 void studentRecord();
